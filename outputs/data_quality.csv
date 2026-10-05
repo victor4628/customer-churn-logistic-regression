@@ -1,0 +1,19 @@
+variable,dtype,role,missing_n,missing_pct,unique_n
+cust_id,str,identifier,0,0.0,40000
+churn_flag,int64,binary target,0,0.0,2
+gender,str,categorical,0,0.0,2
+marrital,str,categorical,0,0.0,3
+age,float64,numeric,43,0.1075,82
+home_owner,int64,categorical,0,0.0,2
+num_cont,int64,numeric,0,0.0,6
+tot_bill,float64,numeric,33,0.0825,39962
+tot_call,int64,numeric,0,0.0,205
+tot_bal,float64,numeric,0,0.0,37191
+fortune,str,categorical,28,0.06999999999999999,3
+tot_bytes,float64,numeric,0,0.0,37120
+tot_air,float64,numeric,0,0.0,35948
+num_out,int64,numeric,0,0.0,512
+google_bytes,float64,numeric,0,0.0,25190
+google_air,float64,numeric,0,0.0,31545
+yahoo_bytes,float64,numeric,0,0.0,24858
+yahoo_air,float64,numeric,0,0.0,29286

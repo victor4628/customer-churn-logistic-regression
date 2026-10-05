@@ -1,0 +1,90 @@
+{
+  "source": "Mocked_Customer_Data_With_Missing.xlsx",
+  "source_sha256": "7bb7861f01424802fc5fb935296165b3608102c02a6f513b4fda9be134c2c1b0",
+  "sheet": "uscell_inputs",
+  "rows": 40000,
+  "columns": 18,
+  "missing_cells": 104,
+  "rows_with_missing": 101,
+  "class_counts": {
+    "0": 19478,
+    "1": 20522
+  },
+  "training_n": 32000,
+  "validation_n": 8000,
+  "seed": 42,
+  "t_test": {
+    "n_churn_0": 19466,
+    "n_churn_1": 20501,
+    "mean_churn_0": 102.31396649217506,
+    "mean_churn_1": 146.51038112271402,
+    "difference_1_minus_0": 44.19641463053897,
+    "t": 156.56845690668146,
+    "df": 36942.17226725028,
+    "p_two_sided": 0.0,
+    "ci95_low": 43.64313448182473,
+    "ci95_high": 44.749694779253204,
+    "cohens_d": 1.576451672600264
+  },
+  "selected_model": "age_bill_quadratic",
+  "cv_roc_auc": 0.950581774256699,
+  "baseline_cv_roc_auc": 0.949431985880698,
+  "cv_auc_improvement": 0.001149788376000993,
+  "validation_metrics": {
+    "accuracy": 0.934125,
+    "precision": 0.9432465923172243,
+    "recall": 0.9273879142300195,
+    "f1": 0.9352500307163042,
+    "roc_auc": 0.9524769994516293,
+    "average_precision": 0.937711125120996,
+    "log_loss": 0.24178740199811427
+  },
+  "validation_auc_bootstrap_ci95": [
+    0.9473536896040746,
+    0.9575764036967778
+  ],
+  "confusion_matrix": [
+    [
+      3667,
+      229
+    ],
+    [
+      298,
+      3806
+    ]
+  ],
+  "categorical_references": {
+    "gender": "Female",
+    "marrital": "divorced",
+    "home_owner": "0",
+    "fortune": "Affluent"
+  },
+  "numeric_training_medians": {
+    "age": 45.0,
+    "num_cont": 2.0,
+    "tot_bill": 129.913113437165,
+    "tot_call": 70.0,
+    "tot_bal": 5453.93,
+    "tot_bytes": 1500.245,
+    "tot_air": 2893.01,
+    "num_out": 150.0,
+    "google_bytes": 320.81,
+    "google_air": 901.165,
+    "yahoo_bytes": 221.83,
+    "yahoo_air": 676.33
+  },
+  "categorical_training_modes": {
+    "gender": "Male",
+    "marrital": "single",
+    "home_owner": "1",
+    "fortune": "Low"
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2"
+  }
+}
